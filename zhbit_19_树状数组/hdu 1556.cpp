@@ -1,3 +1,7 @@
+/*
+    说白了就是求前缀合 
+    采用了 树状数组的变式 区间修改 区间查找
+ */
 #include <iostream>
 #include <cstdio>
 #include <algorithm>

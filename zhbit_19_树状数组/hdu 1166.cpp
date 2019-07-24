@@ -1,3 +1,6 @@
+/*
+    水体 单点修改 区间求和 不二之选 树状数组 简单好写 
+ */
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
@@ -33,16 +36,17 @@ void updata(int x, int v) {
 	}
 }
 int main() {
-	int T,cont=1;
+	int T, cont = 1;
 	scanf("%d", &T);
 	while (T--) {
-		int N,temp;
+		int N, temp;
 		memset(d, 0, sizeof d);
 		scanf("%d", &N);
 		for (int i = 1; i <= N; ++i) {
 			scanf("%d", &temp);
 			updata(i, temp);
 		}
+		printf("Case %d:\n", cont++);
 		while (1) {
 			char str[100];
 			int i, j;
