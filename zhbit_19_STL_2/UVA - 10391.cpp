@@ -1,26 +1,6 @@
 /*
-You are to find all the two-word compound words in a dictionary. A two-word compound word is a
-word in the dictionary that is the concatenation of exactly two other words in the dictionary.
-Input
-Standard input consists of a number of lowercase words, one per line, in alphabetical order. There will
-be no more than 120,000 words.
-Output
-Your output should contain all the compound words, one per line, in alphabetical order.
-Sample Input
-a
-alien
-born
-less
-lien
-never
-nevertheless
-new
-newborn
-the
-zebra
-Sample Output
-alien
-newborn
+	给定单词中 找到一个单词 是由剩余单词中的两个组合而成的
+	思路是将一个单词拆分 然后找在单词表中是否有 有就输出该单词 没有就过
 */ 
 #include <iostream>
 #include <string>

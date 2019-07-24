@@ -1,16 +1,8 @@
 /*
-Ugly numbers are numbers whose only prime factors are 2, 3 or 5. The sequence
-1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, ...
-shows the first 11 ugly numbers. By convention, 1 is included.
-Write a program to find and print the 1500��th ugly number.
-Input
-There is no input to this program.
-Output
-Output should consist of a single line as shown below, with ��<number>�� replaced by the number
-computed.
-Sample Output
-The 1500'th ugly number is <number>.
-*/ 
+	求丑数（只能被2，3，5整除的数） 8也可以 8=4*2=2*2*2 要拆的剩素数
+	正常暴力思想太慢了  我们可以从  要是只能被2，3，5整除的数 说明是
+	2 3 5 的倍数 从这点入手 每发现一个新丑数 就让它乘以 2 3 5 一直往上推
+ */
 #include <iostream>
 #include <string>
 #include <algorithm>
